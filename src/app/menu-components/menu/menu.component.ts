@@ -3,7 +3,7 @@ import {MenuComboHeaderComponent} from "../menu-combo-header/menu-combo-header.c
 import {MenuDividerComponent} from "../menu-divider/menu-divider.component";
 import {MenuItemSmComponent} from "../menu-item-sm/menu-item-sm.component";
 import {MenuItemComponent} from "../menu-item/menu-item.component";
-import {NgForOf} from "@angular/common";
+import {NgForOf, NgOptimizedImage} from "@angular/common";
 
 @Component({
   selector: 'app-menu',
@@ -13,7 +13,8 @@ import {NgForOf} from "@angular/common";
     MenuDividerComponent,
     MenuComboHeaderComponent,
     MenuItemSmComponent,
-    NgForOf
+    NgForOf,
+    NgOptimizedImage
   ],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.css'
