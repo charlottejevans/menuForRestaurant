@@ -1,1 +1,44 @@
-<p>navbar works!</p>
+<header class="fixed flex items-center h-20 w-full px-16 bg-opacity-80 z-50 tracking-wider">
+  <div class="flex justify-between flex-grow max-w-4xl h-full mx-auto text-white font-semibold text-xl">
+    <!-- Brand logo -->
+    <!--    <div>-->
+    <!--      <a rel="noopener noreferrer" href="#" aria-label="Homepage" class="flex items-center h-full">-->
+    <!--        <img ngSrc="assets/images/picniclogo.png" alt="Image Description" class="h-36 w-36 pt-10" height="853"-->
+    <!--             width="1340">-->
+    <!--      </a>-->
+    <!--    </div>-->
+
+    <!-- Burger Menu Icon (Visible on small screens) -->
+    <div class="relative lg:hidden flex items-center ml-auto">
+      <button class="text-white focus:outline-none" (click)="toggleMenu()" aria-label="Toggle Menu">
+        <!-- Burger icon -->
+        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+        </svg>
+      </button>
+      </div>
+      <!-- Dropdown Menu
+      <div *ngIf="isMenuOpen" [class]="getDropdown()"
+           class="absolute top-full right-0 mt-2 py-2 w-48 rounded-lg shadow-xl z-20">
+        <a [routerLink]="'/'" [class]="getHover()"
+           class="block px-4 py-4 text-sm capitalize text-white hover:text-white">
+          Home
+        </a>
+        <a [routerLink]="'/pakkeshop'" [class]="getHover()"
+           class="block px-4 py-4 text-sm capitalize text-white hover:text-white">
+          Pakkeshop
+        </a>
+        <a [routerLink]="'/company-page'" [class]="getHover()" class="block px-4 py-4 text-sm capitalize text-white hover:bg-grey-800 hover:text-white">Company Page</a>
+      </div>
+    </div> -->
+
+    <!-- Navigation Links -->
+    <div class="hidden lg:flex lg:items-center space-x-8 ml-auto tracking-wider">
+      <div class="flex items-center h-max space-x-5">
+        <app-navbar-link [routerLink]="'/'" class="hover:underline">Menu</app-navbar-link>
+        <app-navbar-link [routerLink]="'/pakkeshop'" class="hover:underline">About Us</app-navbar-link>
+        <app-navbar-link [routerLink]="'/company-page'" class="hover:underline">Contact Us</app-navbar-link>
+      </div>
+    </div>
+  </div>
+</header>
